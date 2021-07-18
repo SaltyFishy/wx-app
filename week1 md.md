@@ -45,19 +45,33 @@ wx小程序开发与传统的web开发的对比
 	<li><strong>app.xwml</strong><br>
 		类似web开发的html，但是在某些地方有所不同<br>
 		<ul>
-			
+			<li>与html常用的div、p标签不同，wxml常用的标签有小view, button, text等</li>
+			<li>多了一些 wx:if /wx:for这样的属性以及 {{ }} 这样的表达式,如：<img src="" alt="例">
+			</li>
 		</ul>
 	</li> 
 	<li><strong>project.config.json</strong><br>
 		通常大家在使用一个工具的时候，都会针对各自喜好做一些个性化配置，例如界面颜色、编译配置等等，当你换了另外一台电脑重新安装工具的时候，你还要重新配置。<br>
 		考虑到这点，小程序开发者工具在每个项目的根目录都会生成一个project.config.json，你在工具上做的任何配置都会写入到这个文件，当你重新安装工具或者换电脑工作时，你只要载入同一个项目的代码包，开发者工具就自动会帮你恢复到当时你开发项目时的个性化配置，其中会包括编辑器的颜色、代码上传时自动压缩等等一系列选项。（摘自微信开发者文档）
 	</li> 
-	<li><strong>app.js</strong><br>
-	</li> 
-	<li><strong>app.js</strong><br>
-	</li> 
-	<li><strong>app.js</strong><br>
-	</li> 
-	<li><strong>app.js</strong><br>
+	<li><strong>sitemap.json</strong><br>
+		用于配置小程序及其页面是否允许被微信索引
 	</li> 
 </ul>
+<h2>app.json</h2>
+QuickStart项目默认会生成一个app.json文件，内容有：
+<code>
+
+	{  
+		"pages":[  
+		"pages/index/index",  
+    	"pages/logs/logs"  
+  	],  
+  	"window":{  
+	    "backgroundTextStyle":"light",  
+	    "navigationBarBackgroundColor": "#fff",  
+	    "navigationBarTitleText": "Weixin",  
+	    "navigationBarTextStyle":"black"  
+	  }  
+	}
+</code>
