@@ -109,14 +109,12 @@ wx:for{{数组或对象}}重复渲染<br>
 <img src="https://github.com/SaltyFishy/wx-app/blob/main/wxkey%E5%AE%9E%E4%BE%8B.jpg" alt="wxkey实例">
 详情可参考<a href="https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/list.html" alt="列表渲染">列表渲染</a>
 <h3>条件渲染</h3>
-wx:if="{{true/flase}}"
+wx:if="{{true/flase}}"<br>
 <img src="" alt="条件渲染wxml">
-<img src="" alt="条件渲染js">
+<img src="https://github.com/SaltyFishy/wx-app/blob/main/%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93js.jpg" alt="条件渲染js">
 <img src="" alt="wxif实例">
-
-除此之外还有使用属性hidden，这里暂不多做介绍。
-
+除此之外还有使用属性hidden，这里暂不多做介绍。<br>
 详情可参考<a href="https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/conditional.html" alt="条件渲染">条件渲染</a>
-<h3></h3>
+<h3>template模板</h3>
 <h3></h3>
 <h3></h3>
