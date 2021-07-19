@@ -82,3 +82,41 @@ window有很多项属性，具体属性的作用可在<a href="https://developer
 <h2>page.json</h2>
 区别于app.json，page.json是对具体的某个页面进行配置。<br>
 但是页面配置只能配置app.json中window属性下的属性,并覆盖。
+<h2>page.wxss</h2>
+完全遵循css语法，但是却有一些独特的单位。
+详情参考<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxss.html" alt="WXSS">WXSS</a>
+<h2>模板语法</h2>
+<h3>数据绑定</h3>
+WXML中的动态数据均来自对应Page的data。
+可参考
+<a href="https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/data.html" alyt="数据绑定">数据绑定</a><br>
+注意：当绑定的数据类型为Boolean时，双引号（或单引号）与花括号之间不能有空格<br>
+注意：当出现嵌套循环时，通过wx:for-item与wx:for-index重命名变量就很必要了。<br>
+数据绑定实例：<img src="https://github.com/SaltyFishy/wx-app/blob/main/%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9Awxml.jpg" alt="数据绑定wxml">
+<img src="https://github.com/SaltyFishy/wx-app/blob/main/%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9Ajs.jpg" alt="数据绑定js">
+<img src="https://github.com/SaltyFishy/wx-app/blob/main/%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E5%AE%9E%E4%BE%8B.jpg" alt="数据绑定实例">
+可以发现这种语法也是支持运算的，在微信开发者文档中也有提及其支持的运算。
+<h3>列表渲染</h3>
+wx:for{{数组或对象}}重复渲染<br>
+默认数组的当前项的下标变量名默认为index，数组当前项的变量名默认为item<br>
+使用wx:for-item可以指定数组当前元素的变量名<br>
+使用wx:for-index可以指定数组当前下标的变量名<br>
+<img src="https://github.com/SaltyFishy/wx-app/blob/main/%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93wxml.png" alt="列表渲染wxml">
+<img src="https://github.com/SaltyFishy/wx-app/blob/main/%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93js.jpg" alt="列表渲染js">
+<img src="https://github.com/SaltyFishy/wx-app/blob/main/wxfor%E5%AE%9E%E4%BE%8B.jpg" alt="wxfor实例"><br>
+除了wx:for以外，还有wx:key也是一种渲染列表的方式，具体作用在微信开发者文档中的描述似乎有点晦涩，我们直接看他给的实例：
+<a href="https://developers.weixin.qq.com/s/tpg5tKmv6kZt" alt="实例">实例</a>
+<img src="https://github.com/SaltyFishy/wx-app/blob/main/wxkey%E5%AE%9E%E4%BE%8B.jpg" alt="wxkey实例">
+详情可参考<a href="https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/list.html" alt="列表渲染">列表渲染</a>
+<h3>条件渲染</h3>
+wx:if="{{true/flase}}"
+<img src="" alt="条件渲染wxml">
+<img src="" alt="条件渲染js">
+<img src="" alt="wxif实例">
+
+除此之外还有使用属性hidden，这里暂不多做介绍。
+
+详情可参考<a href="https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/conditional.html" alt="条件渲染">条件渲染</a>
+<h3></h3>
+<h3></h3>
+<h3></h3>
