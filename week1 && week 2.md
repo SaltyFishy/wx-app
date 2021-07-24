@@ -121,7 +121,7 @@ WXML提供模板（template），可以在模板中定义代码片段，然后�
 <img src="https://github.com/SaltyFishy/wx-app/blob/main/%E6%A8%A1%E6%9D%BFwxml.jpg" alt="模板wxml">
 <img src="https://github.com/SaltyFishy/wx-app/blob/main/%E6%A8%A1%E6%9D%BFjs.jpg" alt="模板js">
 <img src="https://github.com/SaltyFishy/wx-app/blob/main/template%E5%AE%9E%E4%BE%8B.jpg" alt="template实例">
-
+有需要时可参考<a href="https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/template.html" alt="template模板">template模板</a>
 <h3>框架</h3>
 
 
